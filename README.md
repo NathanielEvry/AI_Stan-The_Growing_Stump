@@ -4,6 +4,8 @@ Welcome to the ongoing adventures of Stan, the semi-sentient stump, in his never
 
 This repo will be under regular, and rapid development as long as Stan has something to say about it.
 
+![image](https://github.com/NathanielEvry/AI-stan-the-semi-sentient-stump/assets/15219271/4fb276da-4625-42e0-87b6-dfb35748d0e1)
+
 ## Architecture
 
 Stan is built on a sophisticated framework that integrates OpenAI's language models with Discord's bot functionality. This unique combination allows Stan to process and respond to user messages in real-time, maintaining a semblance of memory and continuity in conversations.
