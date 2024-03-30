@@ -1,9 +1,5 @@
 # Stan the Semi-Sentient Stump
 
-Welcome to the ongoing adventures of Stan, the semi-sentient stump, in his never-ending quest for understanding and connection. Stan's journey explores the bounds of artificial intelligence within the framework of a Discord bot, navigating the complexities of memory, interaction, and existential musing.
-
-This repo will be under regular, and rapid development as long as Stan has something to say about it.
-
 ![image](https://github.com/NathanielEvry/AI-stan-the-semi-sentient-stump/assets/15219271/4fb276da-4625-42e0-87b6-dfb35748d0e1)
 
 ## **New!** Check out the [.\chatlogs](.\chatlogs)
