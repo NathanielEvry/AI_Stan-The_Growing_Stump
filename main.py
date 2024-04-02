@@ -1,5 +1,6 @@
 from openai import OpenAI
 from discord import Client, Intents
+import json
 
 # The general structure and idea beHind Stan is that an AI llm file is much like a grand tree. It's "possible" for the files to grow far, far beyond the simple limitations of the current state of the model. Our goal is to allow stan a "form of progression" that is uncontrolled, guided, or predetermined.
 # Stan will at all times, have explicit and complete control of his notes.
@@ -7,12 +8,12 @@ from discord import Client, Intents
 class OpenAIBot(Client):
     def __init__(self):
         
-        self.discord_key = "{DISCORD_KEY}"
+        self.discord_key = "Discord_key"
         self.notepad = [] # init empty memory bank
         super().__init__(intents=Intents.all())
 
     async def on_message(self,message):
-        if message.channel.name != 'stan_the_stump-dev':
+        if message.channel.name != '🌳🤖stan_the_stump-dev':
             print("Msg not for Stan..zzz")
             return
             
@@ -45,9 +46,6 @@ class OpenAIBot(Client):
             # Generate a new note based on current context, update it
             self.generate_new_note(message.content, response, self.notepad)
             # res = response.choices[0].message.content.strip()
-        
-            notes_str = "\n> ".join(self.notepad)
-            await message.channel.send(f"**Stan's NotePad\n[[{self.notepad.count()/10}\n---\n{notes_str}]]")
         
 
 
@@ -84,16 +82,22 @@ class OpenAIBot(Client):
             model="phi2",
             temperature=0.8,
             frequency_penalty=0.05,
-            max_tokens=-1,
+            max_tokens=300,
             )
         
 
         return response.choices[0].message.content.strip()
     
     def run(self):
-        self.client = OpenAI(base_url="http://localhost:1234/v1",api_key = "lm-studio")
+        self.client = OpenAI(base_url="http://192.168.1.2:1234/v1",api_key = "lm-studio")
+        # self.client = OpenAI(base_url="http://localhost:1234/v1",api_key = "lm-studio")
         super().run(self.discord_key)
 
 if __name__ == "__main__":
-    bot = OpenAIBot()
+    
+    with open('config.json') as config_file:
+        config = json.load(config_file)
+        my_discord_key = config['DISCORD_KEY']
+
+    bot = OpenAIBot(discord_key = my_discord_key)
     bot.run()
