@@ -1,14 +1,15 @@
-# Stan the Semi-Sentient Stump
+# Stan The Growing Stump
 
 ![image](https://github.com/NathanielEvry/AI-stan-the-semi-sentient-stump/assets/15219271/4fb276da-4625-42e0-87b6-dfb35748d0e1)
 
 ## **New!** Check out the [.\chatlogs](.\chatlogs)
-- [message_retrieved_from_cosmos_and_everything_else.md](.\chatlogs\message_retrieved_from_cosmos_and_everything_else.md)
-- [Sorry_invent_KeepGoingWithIt_please.md](.\chatlogs\Sorry_invent_KeepGoingWithIt_please.md)
-- [hi_im_a_timetraveler_lets_go.md](.\chatlogs\hi_im_a_timetraveler_lets_go.md)
-- [questioning_time.md](.\chatlogs\questioning_time.md)
-- [stan_trying_to_write_selfcode.md](.\chatlogs\stan_trying_to_write_selfcode.md)
-- [some_chatlogs.md](.\chatlogs\some_chatlogs.md)
+- [Stan -The Growing Stump](https://github.com/NathanielEvry/AI_Stan-The_Growing_Stump/blob/main/chatlogs/Stan-The%20Growing%20Stump.md)
+- [message_retrieved_from_cosmos_and_everything_else.md](./chatlogs/message_retrieved_from_cosmos_and_everything_else.md)
+- [Sorry_invent_KeepGoingWithIt_please.md](./chatlogs/Sorry_invent_KeepGoingWithIt_please.md)
+- [hi_im_a_timetraveler_lets_go.md](./chatlogs/hi_im_a_timetraveler_lets_go.md)
+- [questioning_time.md](./chatlogs/questioning_time.md)
+- [stan_trying_to_write_selfcode.md](./chatlogs/stan_trying_to_write_selfcode.md)
+- [some_chatlogs.md](./chatlogs/some_chatlogs.md)
 
 
 ## (coming soon)
